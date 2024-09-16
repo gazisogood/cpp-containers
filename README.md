@@ -1,54 +1,8 @@
-# s21_containers
-
-Implementation of the s21_containers.h. library.
-
-The russian version of the task can be found in the repository.
-
-
-## Contents
-
-1. [Chapter I](#chapter-i) \
-   1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) \
-   2.1. [Information](#information)
-3. [Chapter III](#chapter-iii) \
-   3.1. [Part 1](#part-1-implementation-of-the-s21_containersh-library)  
-   3.2. [Part 2](#part-2-bonus-implementation-of-the-s21_containersplush-library)  
-   3.3. [Part 3](#part-3-bonus-implementation-of-the-insert_many-method)
-
-
-## Chapter I
-
-![s21_containers](misc/images/s21_containers.png)
-
-Planet Earth, somewhere between the massive containers of the port, 29 October 1993.
-
-*"Do you really think Bjarne will agree to add this to the standard?"*
-
-*"Sure. Especially since he was already interested in templates a couple of years ago, but then they couldn't get enough reliability of the developing library",* said a middle-aged man wearing a white shirt and an HP Labs nametag that said 'A. Stepanov'.
-
-*"I saw your presentation on generalised programming. The idea is really impressive, but they wanted to release the new standard by the end of the year. It will need a lot of adjustments..."*
-
-*"I think that's exactly what they needed to complete the new standard. Especially, as you said, the idea is impressive. But it does need some adjustments. In order to be fully confident of the success of the presentation, we need to give some examples of how the approach and the templates can be used in general. You are familiar with the structure of single-linked lists, right?"*
-
-*"Yeah, I think I'm starting to get your idea. You want to implement generalized lists as an example? One template class for all types?"*
-
-*"Not only that. Imagine if any container could be described once and then used with different data types and classes. How much time, effort and resources it would save! Lists, maps, sets!"* The walk along the Embarcadero promenade was clearly getting more interesting.
-
-*"Queues and stacks... Damn, that's genius."*
-
-*"Exactly. Who, after such examples, would refuse to add a library to their language standard?"*
-
-*"I'm in. We could even put together a small team of guys who are interested. How much time do we have to implement these examples?"*
-
-*"About two weeks before the presentation meeting in San Jose, then..."*
 
 ### Introduction
 
 As part of the project you need to write your own library that implements the basic standard C++ container classes: `list`, `map`, `queue`, `set`, `stack` and `vector`. Implementations should provide a full set of standard methods and attributes for element handling, container capacity checking and iteration. As a bonus, you can also implement several other container classes from the C++ container library that are not as commonly used, but differ in their implementation details.
 
-
-## Chapter II
 
 ### Information
 
@@ -89,20 +43,7 @@ In C++, containers are part of the Standard Template Library (STL) for this very
 
 There are two main types of containers: sequence and associative containers. To find an element in sequence containers (`list`, `vector`, `array`, `stack`, `queue`), you have to look through the container one by one, while in associative containers (`map`, `set`, `multiset`) you just need to look through the key associated with the value.
 
-
-## Chapter III
-
-- The program must be developed in C++ language of C++17 standard using gcc compiler;
-- The program code must be located in the src folder;
-- When writing code it is necessary to follow the Google style;
-- Make sure to use iterators;
-- Classes must be template;
-- Classes must be implemented within the `s21` namespace;
-- Prepare full coverage of container classes methods with unit-tests using the GTest library;
-- Copying of the Standard Template Library (STL) implementation is not allowed;
-- The logic of the Standard Template Library (STL) must be followed (in terms of checks, memory handling and behaviour in abnormal situations).
-
-### Part 1. Implementation of the s21_containers.h library
+### Part 1. Implementation of the containers.h library
 
 You need to implement the `s21_containers.h` library classes (specifications are given in the relevant material sections, see **"Main containers"**). \
 List of classes: `list`, `map`, `queue`, `set`, `stack`, `vector`.
